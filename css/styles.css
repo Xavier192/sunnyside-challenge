@@ -1,5 +1,86 @@
 /*MOBILE FIRST LAYOUT*/
 
+/*INDEX
+
+
+*/
+
+
+/*VARIABLES AND PRESTYLING*/
+
+:root{
+    /*PRIMARY*/
+    --soft-red: hsl(7, 99%, 70%);
+    --yellow: hsl(51, 100%, 49%);
+    --dark-desaturated-cyan: hsl(167, 40%, 24%);
+    --dark-blue: hsl(198, 62%, 26%);
+    --dark-moderate: hsl(168, 34%, 41%);
+    /*NEUTRAL*/
+    --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+    --very-dark-grayish-blue: hsl(213, 9%, 39%);
+    --dark-grayish-blue: hsl(232, 10%, 55%);
+    --grayish-blue: hsl(210, 4%, 67%);
+    --white: hsl(0, 0%, 100%);
+}
+
+@font-face{
+    font-family:'Barlow';
+    src:url(../fonts/Barlow-SemiBold.ttf);
+}
+
+@font-face{
+    font-family:'Fraunces Bold';
+    src:url(../fonts/Fraunces-Bold.ttf);
+}
+
+@font-face{
+    font-family:'Fraunces Black';
+    src:url(../fonts/Fraunces-Black.ttf)
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+
+
+}
+
+.img-desktop{
+    display:none;
+}
+
+body{
+    font-family: 'Barlow',sans-serif;
+}
+
+/*HEADER*/
+
+.header{
+    height:500px;
+    position:relative;
+}
+
+.header img{
+   width:100%;
+   height:100%;
+   object-fit:cover;
+}
+
+.header__title{
+    position:absolute;
+    top:100px;
+    width:100%;
+    text-align:center;
+}
+
+.header__title img{
+    width:30px;
+}
+
+
 
 
 
