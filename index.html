@@ -4,21 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
     <title>Frontend Mentor | Sunnyside agency landing page</title>
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/script.js" defer></script>
 </head>
 
 <body>
 
     <!--HEADER WE ARE CREATIVES-->
     <header class="header">
-        <img src="img/mobile/image-header.webp" class="img-mobile" alt="orange sliced in half" width="750" height="1076">
-        <img src="img/desktop/image-header.webp" class="img-desktop" alt="orange sliced in half" width="2880" height="1600">
+        <img src="img/mobile/image-header.webp" class="img-mobile header__img" alt="orange sliced in half" width="750"
+            height="1076">
+        <img src="img/desktop/image-header.webp" class="img-desktop header__img" alt="orange sliced in half"
+            width="2880" height="1600">
         <div class="header__title">
-            <h1 class="header__title">we are creatives</h1>
-            <img src="img/icon-arrow-down.svg" alt="An arrow that points down">
+            <div class="container">
+                <h1>we are creatives</h1>
+                <img src="img/icon-arrow-down.svg" alt="An arrow that points down">
+            </div>
         </div>
     </header>
 
@@ -27,22 +32,22 @@
         <div class="container flex">
             <div class="navbar__responsive flex">
                 <img src="img/logo.svg" alt="a bold text that says sunnyside" class="navbar__logo">
-                <button type="button" aria-expanded="false" aria-label="Shows the menu when clicked"></button>
+                <button type="button" aria-expanded="false" class="navbar__toggler" aria-label="Shows the menu when clicked"></button>
             </div>
             <ul class="navbar__menu">
                 <li class="navbar__item"><a href="#" class="navbar__link">About</a></li>
                 <li class="navbar__item"><a href="#" class="navbar__link">Services</a></li>
                 <li class="navbar__item"><a href="#" class="navbar__link">Projects</a></li>
-                <li class="navbar__item"><a href="#" class="navbar__link btn">Contact</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__link--btn">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <!--TWO COLUMN SECTION TRANSFORM YOUR BRAND-->
-    <section class="transform">
-        <div class="transform__text">
+    <section class="transform padding">
+        <div class="transform__text container">
             <div class="transform__center">
-                <h2>Transform your brand</h2>
+                <h2>Transform your<span class="line-break">brand</span></h2>
                 <p>
                     We are a full-service creative agency specializing in helping brands grow fast. Engage your clients
                     through compelling visuals that do most of the marketing for you.
@@ -51,8 +56,10 @@
             </div>
         </div>
         <div class="transform__image">
-            <img src="img/mobile/image-transform.webp" class="img-mobile" alt="an egg that projects a shadow" width="750" height="624">
-            <img src="img/desktop/image-transform.webp" class="img-desktop" alt="an egg that projects a shadow" width="720" height="600">
+            <img src="img/mobile/image-transform.webp" class="img-mobile" alt="an egg that projects a shadow"
+                width="750" height="624">
+            <img src="img/desktop/image-transform.webp" class="img-desktop" alt="an egg that projects a shadow"
+                width="720" height="600">
         </div>
     </section>
 
@@ -78,11 +85,14 @@
 
     <section class="twoimages">
         <div class="twoimages__firstimage">
-            <img src="img/mobile/image-graphic-design.webp" class="img-mobile" alt="two red cherries" width="750" height="1200">
-            <img src="img/desktop/image-graphic-design.webp" class="img-desktop" alt="two red cherries" width="720" height="600">
+            <img src="img/mobile/image-graphic-design.webp" class="img-mobile" alt="two red cherries" width="750"
+                height="1200">
+            <img src="img/desktop/image-graphic-design.webp" class="img-desktop" alt="two red cherries" width="720"
+                height="600">
             <div class="twoimages__text">
                 <h2>graphic design</h2>
-                <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential
+                <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures
+                    potential
                     clients’ attention.</p>
             </div>
         </div>
@@ -91,7 +101,8 @@
             <img src="img/desktop/image-photography.webp" class="img-desktop" alt="an orange" width="720" height="600">
             <div class="twoimages__text">
                 <h2>photography</h2>
-                <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+                <p>Increase your credibility by getting the most stunning, high-quality photos that improve your
+                    business image.</p>
             </div>
         </div>
     </section>
@@ -104,7 +115,8 @@
         </div>
         <div class="testimonials__card">
             <img src="img/image-emily.webp" alt="image of a blonde woman" width="144" height="144">
-            <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+            <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were
+                always hit.</p>
             <div class="testimonials__name">
                 <h3>emily r</h3>
                 <p>marketing director</p>
@@ -112,7 +124,8 @@
         </div>
         <div class="testimonials__card">
             <img src="img/image-thomas.webp" alt="image of a man smiling" width="144" height="144">
-            <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable
+            <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
+                enjoyable
                 experience.</p>
             <div class="testimonials__name">
                 <h3>thomas s.</h3>
@@ -121,7 +134,8 @@
         </div>
         <div class="testimonials__card">
             <img src="img/image-jennie.webp" alt="image of a woman smiling" width="144" height="144">
-            <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+            <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
+            </p>
             <div class="testimonials__name">
                 <h3>Jennie F.</h3>
                 <p>business owner</p>
@@ -132,14 +146,21 @@
     <!--GALLERY SECTION-->
 
     <section class="gallery">
-        <img src="img/mobile/image-gallery-milkbottles.webp" class="img-mobile" alt="three milk bottles" width="376" height="376">
-        <img src="img/mobile/image-gallery-orange.webp" class="img-mobile" alt="orange sliced in half in a plate" width="376" height="376">
+        <img src="img/mobile/image-gallery-milkbottles.webp" class="img-mobile" alt="three milk bottles" width="376"
+            height="376">
+        <img src="img/mobile/image-gallery-orange.webp" class="img-mobile" alt="orange sliced in half in a plate"
+            width="376" height="376">
         <img src="img/mobile/image-gallery-cone.webp" class="img-mobile" alt="ice cream cone" width="376" height="376">
-        <img src="img/mobile/image-gallery-sugar-cubes.webp" class="img-mobile" alt="stacked sugar cubes" width="376" height="376">
-        <img src="img/desktop/image-gallery-milkbottles.webp" class="img-desktop" alt="three milk bottles" width="720" height="894">
-        <img src="img/desktop/image-gallery-orange.webp" class="img-desktop" alt="orange sliced in half in a plate" width="720" height="894">
-        <img src="img/desktop/image-gallery-cone.webp" class="img-desktop" alt="ice cream cone" width="720" height="894">
-        <img src="img/desktop/image-gallery-sugar-cubes.webp" class="img-desktop" alt="stacked sugar cubes" width="720" height="894">
+        <img src="img/mobile/image-gallery-sugar-cubes.webp" class="img-mobile" alt="stacked sugar cubes" width="376"
+            height="376">
+        <img src="img/desktop/image-gallery-milkbottles.webp" class="img-desktop" alt="three milk bottles" width="720"
+            height="894">
+        <img src="img/desktop/image-gallery-orange.webp" class="img-desktop" alt="orange sliced in half in a plate"
+            width="720" height="894">
+        <img src="img/desktop/image-gallery-cone.webp" class="img-desktop" alt="ice cream cone" width="720"
+            height="894">
+        <img src="img/desktop/image-gallery-sugarcubes.webp" class="img-desktop" alt="stacked sugar cubes" width="720"
+            height="894">
     </section>
 
     <!--FOOTER-->
