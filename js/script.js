@@ -1,5 +1,5 @@
 const navbarBehavior = function (){
-    const navbar = document.querySelector('.navbar');
+    const navbar = document.querySelector('.navbar .container');
     const navbarToggler = document.querySelector('.navbar__toggler');
     const navbarMenu = document.querySelector('.navbar__menu');
     let animationStopTimer = null;
